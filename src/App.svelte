@@ -5,8 +5,8 @@
   const mobileImg = 'assets/images/pattern-divider-mobile.svg';
   const desktopImg = 'assets/images/pattern-divider-mobile.svg';
   const btnIcon = 'assets/images/icon-dice.svg';
-  let adviceNumber = 0;
-  let advice = '';
+  let adviceNumber = 999;
+  let advice = 'Never Say Never';
   const getAdvice = async () => {
     fetch('https://api.adviceslip.com/advice')
       .then((response) => response.json())
